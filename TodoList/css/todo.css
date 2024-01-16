@@ -1,0 +1,134 @@
+body {
+    font-family: arial;
+    background-color: aquamarine;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(50, 74, 117);
+    margin: 42px auto;
+    animation-name: Todo;
+    animation-duration:3s;
+    animation-iteration-count:3;
+}
+
+@keyframes Todo {
+    0% {
+        color: rgb(50, 74, 117),
+    }
+
+    20% {
+        color: red,
+    }
+
+    40% {
+        color: rgb(238, 172, 50)
+    }
+
+    60% {
+        font-family: cursive;
+        color: blue,
+    }
+
+    80% {
+        font-family: Arial, Helvetica, sans-serif;
+        color: yellow,
+    }
+
+    100% {
+        font-family: fantasy;
+        color: rgb(230, 84, 108)
+    }
+}
+
+.container {
+    border: 2px solid #006400;
+    border-radius: 20px;
+    height: auto;
+    padding: 32px 100px;
+    margin: 28px 300px;
+    background-color:rgb(186, 153, 217); ;
+    justify-content: center;
+    
+}
+
+.container1 {
+    border: 2px dashed rgb(128, 0, 79);
+    align-items:center;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 24px;
+    background-color: rgb(219, 194, 243);
+    justify-content:center;
+    padding:8px;
+    font-size: 18px;
+    color: rgb(94, 8, 31);
+}
+button img {
+    height: 10px;
+    width: 20px;
+}
+
+img {
+    margin: 2px 2px;
+}
+
+.todo-grid,
+.todo-input-grid {
+    display: grid;
+    grid-template-columns: 180px 150px 130px;
+    column-gap: 13px;
+    row-gap: 13px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.todo-input-grid {
+
+    margin-bottom: 13px;
+    align-items: stretch;
+}
+
+.name-input,
+.date-input {
+    font-size: 18px;
+    padding: 6px;
+}
+
+.add-todo-button {
+    background-color: rgb(245, 51, 238);
+    border: none;
+    width: 126px;
+
+}
+
+.add-todo-button img {
+    height: 32px;
+    width: 32px;
+    padding: 2px 2px;
+    margin-top: 5px;
+
+}
+
+.delete-todo-button {
+    background-color: rgb(237, 174, 129);
+    border: none;
+    width: 106px;
+}
+
+.delete-todo-button img {
+    height: auto;
+    width: 24px;
+    margin-top: 6px;
+    padding: 3px 3px;
+}
+
